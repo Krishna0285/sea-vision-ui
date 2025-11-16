@@ -1,6 +1,6 @@
 import { NavLink } from "@/components/NavLink";
 import { Button } from "@/components/ui/button";
-import { Waves, Moon, Sun, Bell, User } from "lucide-react";
+import { Waves, Moon, Sun } from "lucide-react";
 import { useState } from "react";
 
 const navItems = [
@@ -63,13 +63,6 @@ export default function TopNavigation() {
               ) : (
                 <Moon className="w-5 h-5 text-primary" />
               )}
-            </Button>
-            <Button variant="ghost" size="icon" className="rounded-full hover:bg-muted relative">
-              <Bell className="w-5 h-5" />
-              <span className="absolute top-2 right-2 w-2 h-2 bg-accent rounded-full" />
-            </Button>
-            <Button variant="ghost" size="icon" className="rounded-full hover:bg-muted">
-              <User className="w-5 h-5" />
             </Button>
           </div>
         </div>
